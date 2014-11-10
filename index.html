@@ -1,0 +1,71 @@
+<html lang="">
+    <head>
+        <meta name="viewport" content="width=device-width, minimal-ui, user-scalable=no, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>Men's Bathroom Status</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .box {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                display: -webkit-flex;
+                -webkit-align-items: center;
+                -webkit-justify-content: center;
+                background: transparent url(assets/bathroom.jpg) 0 0 / cover no-repeat;
+            }
+
+            .box_isInActive {
+                background:
+                    linear-gradient(
+                        rgba(101, 196, 113, 0.8),
+                        rgba(101, 196, 113, 0.8)
+                    ),
+                    url(assets/bathroom.jpg) 0 0 / cover no-repeat;
+            }
+
+            .box_isActive {
+                background:
+                    linear-gradient(
+                        rgba(216, 88, 69, 0.8),
+                        rgba(216, 88, 69, 0.8)
+                    ),
+                    url(assets/bathroom.jpg) 0 0 / cover no-repeat;
+            }
+
+            .icon {}
+
+            .icon_isInActive {
+                width: 207px;
+                height: 162px;
+                background: transparent url(assets/checkmark.svg) 0 0 no-repeat;
+            }
+
+            .icon_isActive {
+                width: 162px;
+                height: 162px;
+                background-image: url(assets/x.svg);
+            }
+        </style>
+        <script src="https://cdn.socket.io/socket.io-1.1.0.js"></script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-55667857-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+    </head>
+    <body>
+        <div class="box">
+            <span class="icon"></span>
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
