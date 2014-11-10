@@ -12,7 +12,7 @@ Adafruit_NeoPixel strip = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, PIXEL_TYPE);
 void setup() {
   strip.begin();
   strip.show(); // Initialize all pixels to 'off'
-  Spark.variable(“doorStatus", &doorStatus, INT);
+  Spark.variable("doorStatus", &doorStatus, INT);
 }
 
 void loop() {
@@ -167,4 +167,3 @@ void doorClosed() {
     strip.setBrightness(30);
     strip.show();
 }
-
