@@ -1,6 +1,8 @@
 smart-bathroom
 ==============
 
+![](http://harkmylord.com/assets/images/bathroom/dribbble-animation.gif)
+
 ### Install
 npm install
 
