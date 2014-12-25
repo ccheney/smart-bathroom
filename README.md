@@ -1,5 +1,6 @@
 smart-bathroom
 ==============
+https://learn.adafruit.com/smart-bathroom-app
 
 ![](http://harkmylord.com/assets/images/bathroom/dribbble-animation.gif)
 
